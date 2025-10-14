@@ -3,8 +3,11 @@ if SHIELD_ANYWHY_FLAKE_LEFT
 config ZMK_KEYBOARD_NAME
     default "Anywhy Flake"
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
+
+config ZMK_USB
+	default y
 
 config ZMK_STUDIO
     default y
@@ -15,5 +18,8 @@ if SHIELD_ANYWHY_FLAKE_LEFT || SHIELD_ANYWHY_FLAKE_RIGHT
 
 config ZMK_SPLIT
     default y
+
+config ZMK_BLE
+	default y
 
 endif
